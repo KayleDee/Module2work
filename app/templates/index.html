@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Home View</h1>
+    <div class= "bob">
+    <a href="{% url "leaderships" team="management" %}"><button>Management</button></a>
+    <a href ="{% url "leaderships" team="documentation" %}"><button>Documentation</button></a>
+    <a href ="{% url "leaderships" team="procurement" %}"><button>Procurement</button></a>
+    <a href ="{% url "leaderships" team="community" %}"><button>Community</button></a>
+    </div>
+{% endblock content %}
